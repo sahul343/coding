@@ -1,0 +1,24 @@
+In a class, there are n students and their tutor wants to divide them into two groups and puts a quiz between them. He can conduct quizzes for not more than 20 days. 
+He wants to conduct a quiz between them such that each student must have played against the remaining students in at least one of the days. Student A played against student B if they are in opposites team in at least one of the days. 
+So he wants to finish this business as early as possible. And he is also happy if he can complete it in lesser than 20 days. Please help him to achieve it. 
+
+
+Input: N  (Number of students) where 2 <= N <= 1000000 and N is even.
+
+
+Output: k(the number of days required such that the tutor desire satisfied)
+print k lines where each line will contain n integers t1,t2,t3,.......,tn where 
+ti = 0 if he belongs to team1 on that day.
+ti = 1 if he belongs to team2 on that day.
+
+
+Solution.
+To represent N numbers uniquely in binary we require at least log(N) bits.
+log(1000000) <= 20. and 2 numbers will differ at least in 1 position so on that day they are in different teams. 
+
+Example: 
+Input  8
+Output 3
+0 1 0 1 0 1 0 1
+0 0 1 1 0 0 1 1
+0 0 0 0 1 1 1 1
