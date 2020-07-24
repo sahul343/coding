@@ -3,15 +3,14 @@ using namespace std;
 int main(){
     int t;
     cin >> t;
-    while( t --){
+    while(t --){
         int n;
         cin >> n;
-        if(n%2 == 1){
-            cout << (n + 1)/2 << "\n";
+        for(int i = 1; i <= n; i ++){
+            cout << 1 << " ";
         }
-        else{
-            cout << (n/2) << "\n";
-        }
+        cout << "\n";
     }
+
     return 0;
 }
